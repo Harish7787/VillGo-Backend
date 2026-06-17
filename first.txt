@@ -1,0 +1,23 @@
+Cart
+Order
+OrderItem
+
+
+❌ You lose the concept of a cart
+❌ You can't calculate total price properly
+❌ Hard to extend (coupon, tax, shipping)
+❌ Not scalable
+❌ Not professional
+
+One user adds:
+
+iPhone (2 quantity)
+Shoes (1 quantity)
+Laptop (1 quantity)
+
+Can you store all this in one table row? ❌ No.
+
+You need:
+
+One cart (belongs to user)
+Multiple cart items (each product inside cart)
