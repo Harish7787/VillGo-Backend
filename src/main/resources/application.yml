@@ -2,10 +2,16 @@ spring:
   application:
     name: E-commerce
 
+#  datasource:
+#    url: ${SPRING_DATASOURCE_URL}
+#    username: ${SPRING_DATASOURCE_USERNAME}
+#    password: ${SPRING_DATASOURCE_PASSWORD}
+
   datasource:
-    url: ${SPRING_DATASOURCE_URL}
-    username: ${SPRING_DATASOURCE_USERNAME}
-    password: ${SPRING_DATASOURCE_PASSWORD}
+    url: jdbc:postgresql://localhost:5432/E-Commerce
+    username: postgres
+    password: admin123
+    driver-class-name: org.postgresql.Driver
 
   jpa:
     hibernate:
@@ -38,10 +44,15 @@ server:
   tomcat:
     max-part-count: 50
 
+#cloudinary:
+#  cloud-name: ${CLOUDINARY_CLOUD_NAME}
+#  api-key: ${CLOUDINARY_API_KEY}
+#  api-secret: ${CLOUDINARY_API_SECRET}
+
 cloudinary:
-  cloud-name: ${CLOUDINARY_CLOUD_NAME}
-  api-key: ${CLOUDINARY_API_KEY}
-  api-secret: ${CLOUDINARY_API_SECRET}
+  cloud-name: dpavf5tcu
+  api-key: 513725864749313
+  api-secret: t1d9EAcROXGP4g6T_Y5f6lhzssQ
 #spring:
 #  application:
 #    name: E-commerce
